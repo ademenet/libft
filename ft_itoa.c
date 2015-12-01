@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:05:26 by ademenet          #+#    #+#             */
-/*   Updated: 2015/11/30 18:40:12 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/01 19:27:56 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int		ft_sizeofanint(int n)
 	int		size;
 
 	size = 0;
-	if (n < 0)
+	if (n < 0 || n == 0)
 		size++;
 	if (n > 9)
 	{
@@ -36,11 +36,13 @@ char	*ft_itoa(int n)
 
 	length = ft_sizeofanint(n);
 	fresh = (char *)malloc((length + 1) * sizeof(char));
+	if (!fresh)
+		return(NULL);
 	fresh[length] = '\0';
 	length--;
 	while (length >= 0)
 	{
-		fresh[length] = n + 48;
+		fresh[length] = n + '0';
 		length--;
 	}
 	if (n < 0)
