@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:36:23 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 16:43:05 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/01 19:13:33 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ void	ft_putnbr(int n)
 	char	*s;
 
 	s = ft_itoa(n);
-	while (*s++)
-		write(1, s, 1);
+	ft_putstr(s);
 }

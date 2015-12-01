@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 18:49:04 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 17:07:11 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/01 17:54:28 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strstr(const char *s1, const char *s2)
 {
 	size_t		len;
 
-	if (!s1 && !s2)
+	if (*s1 == '\0' && *s2 == '\0')
 		return (NULL);
 	if (!s2)
 		return ((char *)s1);

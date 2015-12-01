@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:34:14 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 16:41:28 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/01 19:04:12 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 void	ft_putendl(char const *s)
 {
-	while (*s++)
-		write(1, s, 1);
-	write(1, "\n", 1);
+	ft_putstr(s);
+	ft_putchar('\n');
 }
