@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 15:56:10 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 09:42:48 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/02 17:01:06 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 
 	pdst = (unsigned char *)dst;
 	psrc = (unsigned char *)src;
-	while (n--)
+	while (n-- && *psrc != (unsigned char)c)
 	{
 		*pdst = *psrc;
-		if (*psrc == (unsigned char)c)
-			return (pdst++);
 		pdst++;
 		psrc++;
 	}
+	if (*psrc == (unsigned char)c)
+		return ((void *)(pdst + 1));
 	return (NULL);
 }
