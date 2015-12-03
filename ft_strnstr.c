@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 11:10:13 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/02 16:32:06 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 09:49:50 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 
 	i = 0;
 	if (!*s2)
-		return((char *)s1);
+		return ((char *)s1);
 	len = ft_strlen(s2);
 	if (n < len)
 		return (NULL);

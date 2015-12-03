@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:03:50 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 16:55:00 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 09:49:00 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "libft.h"
 
-static int	ft_nbofwords(char *s, char c)
+static int		ft_nbofwords(char *s, char c)
 {
 	int	i;
 	int	is_word;
@@ -35,7 +35,7 @@ static int	ft_nbofwords(char *s, char c)
 	return (i);
 }
 
-static int	ft_strlenlim(char *s, char c)
+static int		ft_strlenlim(char *s, char c)
 {
 	int	len;
 
@@ -48,8 +48,7 @@ static int	ft_strlenlim(char *s, char c)
 	return (len);
 }
 
-
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		nb_ofwords;
 	char	**tab;

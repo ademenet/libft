@@ -6,14 +6,14 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 18:39:12 by ademenet          #+#    #+#             */
-/*   Updated: 2015/11/30 11:08:22 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 09:47:32 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "libft.h"
 
-int	ft_strncmp(const char *s1,  const char *s2, size_t n)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while ((unsigned char)*s1 == (unsigned char)*s2 && n--)
 	{
