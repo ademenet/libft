@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/03 12:22:40 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 17:49:47 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 18:34:23 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*new_link;
 
-	new_link = (t_list *)malloc(t_list);
+	new_link = (t_list *)malloc(content_size);
 	if (!new_link)
 		return (NULL);
 	if (content == NULL)

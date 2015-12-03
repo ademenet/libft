@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/03 17:44:37 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 17:47:07 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 18:34:04 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-return (lst);
+	return (lst);
 }
