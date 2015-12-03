@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 10:13:28 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/02 19:13:28 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 09:40:05 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,29 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	const size_t	dstlen = ft_strlen(dst);
-	const size_t	srclen = ft_strlen(src);
-	int	i;
-	int j;
-	size_t	n;
+	char		*pdst;
+	const char	*psrc;
+	size_t		n;
+	size_t		dstlen;
 
-	i = 0;
-	j = 0;
+	pdst = dst;
+	psrc = src;
 	n = size;
-	if (size < dstlen)
-		return (size + srclen);
-	while (dst[i] != '\0' && i < (int)size)
-		i++;
-	while (n-- && i < (int)size)
+	while (*pdst != '\0' && n-- != 0)
+		pdst++;
+	dstlen = pdst - dst;
+	n = size - dstlen;
+	if (n == 0)
+		return (dstlen + ft_strlen(src));
+	while (*psrc != '\0')
 	{
-		dst[i] = src[j];
-		i++;
-		j++;
+		if (n != 1)
+		{
+			*pdst++ = *psrc;
+			n--;
+		}
+		psrc++;
 	}
-	dst[i] = '\0';
-	if (size == dstlen)
-		return (dstlen);
-	return (dstlen + size - n);
+	*pdst = '\0';
+	return (dstlen + (psrc - src));
 }
