@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/03 12:22:40 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 12:35:14 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 12:42:20 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 t_list		*ft_lstnew(void const *content, size_t content_size)
 {
 	void	*new_content;
+	s_list	new_link;
 
 	if (content == 0)
 	{
@@ -23,7 +24,6 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 	new_content = (void *)malloc(content_size);
 	if (!new_content)
 		return (NULL);
-	s_list->content = ft_memcpy(new_content, content, content_size);
-	s_list->next = NULL;
-	free(new_content);
+	new_link->content = ft_memcpy(new_content, content, content_size);
+	new_link->next = NULL;
 }
