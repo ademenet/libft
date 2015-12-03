@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:48:03 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 10:24:34 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 11:04:47 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 typedef struct		s_list
 {
 	void			*content;
-	size_t			conten_size;
+	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
 
