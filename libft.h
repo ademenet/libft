@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:48:03 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 18:45:41 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 10:24:34 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 # define LIBFT_H
 
 # include <string.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			conten_size;
+	struct s_list	*next;
+}					t_list;
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -43,7 +50,6 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
