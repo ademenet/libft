@@ -34,7 +34,7 @@ Consulter le `man` pour la description des fonctions suivantes :
 
 ## Partie 2
 * ft_memalloc  
-   Alloue avec `malloc(3)` et retourne une zone de mémoire "fraiche". La mémoire allouée est intialisée à 0. Si l'allocation échoue, la fonction renvoie NULL.
+   Alloue avec `malloc(3)` et retourne une zone de mémoire "fraiche". La mémoire allouée est intialisée à 0. Si l'allocation échoue, la fonction renvoie NULL.  
 * ft_memdel  
    Prend en paramètre l’adresse d’un pointeur dont la zone poin- tée doit être libéée avec `free(3)`, puis le pointeur est mis à NULL.
 * ft_strnew  
@@ -57,4 +57,4 @@ Consulter le `man` pour la description des fonctions suivantes :
    Compare lexicographiquement s1 et s2 jusqu’à n caractères maximum ou bien qu’un `’\0’` ait été rencontré. Si les deux chaines sont égales, la fonction retourne 1, ou 0 sinon.
 
 
-# Partie bonus
+## Partie bonus
