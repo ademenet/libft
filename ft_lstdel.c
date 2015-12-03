@@ -1,35 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/03 12:22:40 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 17:49:47 by ademenet         ###   ########.fr       */
+/*   Created: 2015/12/03 17:31:18 by ademenet          #+#    #+#             */
+/*   Updated: 2015/12/03 17:55:11 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-t_list		*ft_lstnew(void const *content, size_t content_size)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	t_list	*new_link;
-
-	new_link = (t_list *)malloc(t_list);
-	if (!new_link)
-		return (NULL);
-	if (content == NULL)
+	while (**alst->next)
 	{
-		new_link->content = NULL;
-		new_link->content_size = (size_t)0;
+		(*del)(**alst->content, **alst->content_size);
+		**alst->next = NULL;
+		free(*alst);
 	}
-	else
-	{
-		ft_memcpy(new_link->content, content, content_size);
-		new_link->content_size = content_size;
-		new_link->next = NULL;
-	}
-	return(new_link);
 }
