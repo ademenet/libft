@@ -34,13 +34,17 @@ Consulter le `man` pour la description des fonctions suivantes :
 
 ## Partie 2
 #### ft_memalloc  
-> Alloue avec `malloc(3)` et retourne une zone de memoire "fraiche". La memoire allouee est intialisee a 0. Si l'allocation echoue, la fonction renvoie `NULL`.  
+> Alloue avec `malloc(3)` et retourne une zone de memoire "fraiche". La memoire allouee est intialisee a 0. Si l'allocation echoue, la fonction renvoie `NULL`.
+
 #### ft_memdel  
 > Prend en parametre l’adresse d’un pointeur dont la zone pointee doit etre liberee avec `free(3)`, puis le pointeur est mis a `NULL`.  
-#### ft_strnew  
+#### ft_strnew
+
 > Alloue avec `malloc(3)` et retourne une chaine de caractere “fraiche” terminee par un `’\0’`. Chaque caractere de la chaine est initialise a `’\0’`. Si l’allocation echoue, la fonction renvoie `NULL`.  
+
 #### ft_strdel  
 > Prend en parametre l’adresse d’une chaine de caracteres qui doit etre liberee avec `free(3)` et son pointeur mis a `NULL`.  
+
 #### ft_strclr  
 > Assigne la valeur `’\0’` a tous les caracteres de la chaine passee en parametre.  
 #### ft_striter  
