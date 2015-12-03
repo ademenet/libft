@@ -33,30 +33,30 @@ Consulter le `man` pour la description des fonctions suivantes :
 
 
 ## Partie 2
-### ft_memalloc  
+#### ft_memalloc  
 > Alloue avec `malloc(3)` et retourne une zone de memoire "fraiche". La memoire allouee est intialisee a 0. Si l'allocation echoue, la fonction renvoie `NULL`.  
-* ft_memdel  
+#### ft_memdel  
 > Prend en parametre l’adresse d’un pointeur dont la zone pointee doit etre liberee avec `free(3)`, puis le pointeur est mis a `NULL`.  
-* ft_strnew  
+#### ft_strnew  
 > Alloue avec `malloc(3)` et retourne une chaine de caractere “fraiche” terminee par un `’\0’`. Chaque caractere de la chaine est initialise a `’\0’`. Si l’allocation echoue, la fonction renvoie `NULL`.  
-* ft_strdel  
+#### ft_strdel  
 > Prend en parametre l’adresse d’une chaine de caracteres qui doit etre liberee avec `free(3)` et son pointeur mis a `NULL`.  
-* ft_strclr  
+#### ft_strclr  
 > Assigne la valeur `’\0’` a tous les caracteres de la chaine passee en parametre.  
-* ft_striter  
+#### ft_striter  
 > Applique la fonction `f` a chaque caractere de la chaine de caracteres passee en parametre. Chaque caractere est passe par adresse a la fonction `f` afin de pouvoir être modifie si necessaire.  
-* ft_striteri  
+#### ft_striteri  
 > Applique la fonction `f` a chaque caractere de la chaine de caracteres passee en parametre en precisant son index en premier argument. Chaque caractere est passe par adresse a la fonction `f` afin de pouvoir etre modifie si necessaire.  
-* ft_strmap  
+#### ft_strmap  
 > Applique la fonction `f` a chaque caractere de la chaine de caracteres passee en parametre pour creer une nouvelle chaine “fraiche” avec `malloc(3)` resultant des applications successives de `f`.  
-* ft_strmapi  
+#### ft_strmapi  
 > Applique la fonction `f` a chaque caractere de la chaine de caracteres passee en parametre en precisant son index pour creer une nouvelle chaine “fraiche” avec `malloc(3)` resultant des applications successives de `f`.  
-* ft_strequ  
+#### ft_strequ  
 > Compare lexicographiquement s1 et s2. Si les deux chaines sont egales, la fonction retourne 1, ou 0 sinon.  
-* ft_strnequ  
-Compare lexicographiquement s1 et s2 jusqu’a n caracteres maximum ou bien qu’un `’\0’` ait ete rencontre. Si les deux chaines sont egales, la fonction retourne 1, ou 0 sinon.  
+#### ft_strnequ  
+> Compare lexicographiquement s1 et s2 jusqu’a n caracteres maximum ou bien qu’un `’\0’` ait ete rencontre. Si les deux chaines sont egales, la fonction retourne 1, ou 0 sinon.  
 
 
 ## Partie bonus
-* ft_lstnew  
-> 
+#### ft_lstnew  
+> Alloue avec `malloc(3)` et retourne un maillon “frais”. Les champs content et content_size du nouveau maillon sont initialises par copie des parametres de la fonction. Si le parametre `content` est nul, le champs `content` est initialise a `NULL` et le champs `content_size` est initialise a 0 quelque soit la valeur du parametre `content_size`. Le champ `next` est initialise a `NULL`. Si l’allocation echoue, la fonction renvoie `NULL`.
