@@ -6,7 +6,7 @@
 #    By: ademenet <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2015/12/01 18:32:49 by ademenet         ###   ########.fr        #
+#    Updated: 2015/12/03 17:46:11 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,7 +67,13 @@ SOURCES = ft_atoi.c\
 		  ft_strsub.c\
 		  ft_strtrim.c\
 		  ft_tolower.c\
-		  ft_toupper.c
+		  ft_toupper.c\
+		  ft_lstnew.c\
+		  ft_lstdelone.c\
+		  ft_lstdel.c\
+		  ft_lstadd.c\
+		  ft_lstiter.c\
+		  ft_lstmap.c
 
 HEADERS = libft.h
 
