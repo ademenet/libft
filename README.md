@@ -55,3 +55,6 @@ Consulter le `man` pour la description des fonctions suivantes :
    Compare lexicographiquement s1 et s2. Si les deux chaines sont égales, la fonction retourne 1, ou 0 sinon.
 * ft_strnequ  
    Compare lexicographiquement s1 et s2 jusqu’à n caractères maximum ou bien qu’un `’\0’` ait été rencontré. Si les deux chaines sont égales, la fonction retourne 1, ou 0 sinon.
+
+
+# Partie bonus
