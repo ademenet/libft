@@ -6,10 +6,9 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/03 12:22:40 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 13:33:29 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/03 13:36:10 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 t_list		*ft_lstnew(void const *content, size_t content_size)
 {
