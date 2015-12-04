@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/03 17:35:24 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 18:32:46 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/04 10:13:19 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new->next = *alst;
+	if (alst && new)
+	{
+		new->next = *alst;
+		*alst = new;
+	}
 }
