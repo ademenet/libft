@@ -66,11 +66,44 @@ Consulter le `man` pour la description des fonctions suivantes :
 #### ft_strnequ
 > Compare lexicographiquement s1 et s2 jusqu’a n caracteres maximum ou bien qu’un `’\0’` ait ete rencontre. Si les deux chaines sont egales, la fonction retourne 1, ou 0 sinon.
 
+#### ft_strsub
+> Alloue avec `malloc(3)` et retourne la copie "fraiche" d'un troncon de la chaine de caracteres passee en parametre. Le troncon commence a l'index `start` et a pour longueur `len`. Si `start` et `len` ne designent pas un troncon de chaine valide, le comportement est indetermine. Si l'allocation echoue, la fonction renvoie `NULL`.
+
+#### ft_strjoin
+> Alloue avec `malloc(3)` et retourne une chaine de caracteres "fraiche" terminee pas un `'\0'` resultant de la concatenation de `s1` et `s2`. Si l'allocation echoue, la fonction renvoie `NULL`.
+
+#### ft_strtrim
+> Alloue avec `malloc(3)` et retourne une copie de la chaine passee en parametre sans les espaces blancs au debut et a la fin de cette chaine. On considere comme des espaces blancs les caracteres `' '`, `'\n'` et `'\t'`. Si `s` ne contient pas d'espaces blancs au debut ou a la fin, la fonction renvoie une copie de `s`. Si l'allocation echoue, la fonction renvoie `NULL`.
+
 #### ft_strsplit
 > Alloue avec `malloc(3)` et retourne un tableau de chaines de caracteres "fraiches" (toutes terminees par un `'\0'`, le tableau egalement donc) resultant de la decoupe de `s` selon le caractere `c`. Si l'allocation echoue, la fonction retourne `NULL`.
 
 #### ft_itoa
 > Alloue avec `malloc(3)` et retourne une chaine de caracteres "fraiche" terminee par un `'\0'` representatnt l'entier `n` passe en parametre. Les nombres negatifs sont geres. Si l'allocation echoue, la fonction renvoie `NULL`.
+
+#### ft_putchar
+> Affiche le caractere `c` sur la sortie standard.
+
+#### ft_putstr
+> Affiche la chaine `s` sur la sortir standard.
+
+#### ft_putendl
+> Affiche la chaine `s` sur la sortie standard suivi d'un `'\n'`.
+
+#### ft_putnbr
+> Affiche l'entier `n` sur la sortie standard.
+
+#### ft_putchar_fd
+> Ecrit le caractere `c` sur le descripteur de fichier `fd`.
+
+#### ft_putstr_fd
+> Ecrit la chaine `s` sur le descripteur de fichier `fd`.
+
+#### ft_putendl_fd
+> Ecrit la chaine `s` sur le descripteur de fichier `fd` suivi d'un `'\n'`.
+
+#### ft_putnbr_fd
+> Ecrit l'entier `n` sur le descripteur de fichier `fd`.
 
 ## Partie bonus
 #### ft_lstnew
