@@ -66,6 +66,11 @@ Consulter le `man` pour la description des fonctions suivantes :
 #### ft_strnequ
 > Compare lexicographiquement s1 et s2 jusqu’a n caracteres maximum ou bien qu’un `’\0’` ait ete rencontre. Si les deux chaines sont egales, la fonction retourne 1, ou 0 sinon.
 
+#### ft_strsplit
+> Alloue avec `malloc(3)` et retourne un tableau de chaines de caracteres "fraiches" (toutes terminees par un `'\0'`, le tableau egalement donc) resultant de la decoupe de `s` selon le caractere `c`. Si l'allocation echoue, la fonction retourne `NULL`.
+
+#### ft_itoa
+> Alloue avec `malloc(3)` et retourne une chaine de caracteres "fraiche" terminee par un `'\0'` representatnt l'entier `n` passe en parametre. Les nombres negatifs sont geres. Si l'allocation echoue, la fonction renvoie `NULL`.
 
 ## Partie bonus
 #### ft_lstnew
