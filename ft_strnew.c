@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 08:48:08 by ademenet          #+#    #+#             */
-/*   Updated: 2015/11/30 15:24:39 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/15 16:00:50 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ char	*ft_strnew(size_t size)
 	if (!text)
 		return (NULL);
 	ft_bzero(text, size);
-	text[size + 1] = '\0';
+	text[size] = '\0';
 	return (text);
 }
