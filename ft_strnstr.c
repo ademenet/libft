@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 11:10:13 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 09:49:50 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/15 17:42:38 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,28 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t	len;
-	int		i;
+	size_t			i;
+	char			*j;
+	char			*k;
 
-	i = 0;
 	if (!*s2)
 		return ((char *)s1);
-	len = ft_strlen(s2);
-	if (n < len)
-		return (NULL);
-	while (s1[i] != '\0' && i <= (n - len))
+	while (n-- && *s1)
 	{
-		if (ft_strncmp(&s1[i], s2, len) == 0)
-			return ((char *)&s1[i]);
-		i++;
+		if (*s1 == *s2)
+		{
+			i = n;
+			j = (char *)s1 + 1;
+			k = (char *)s2 + 1;
+			while (i-- && *j && *k && *j == *k)
+			{
+				++j;
+				++k;
+			}
+			if (!*k)
+				return ((char *)s1);
+		}
+		++s1;
 	}
 	return (NULL);
 }
