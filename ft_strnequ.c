@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 10:32:08 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/16 15:06:11 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 16:49:39 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	if (!s1 || !s2 || n == 0)
+	if (!s1)
 		return (0);
 	while (n-- && *s1 && *s2)
 	{
