@@ -6,17 +6,13 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:36:23 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 19:13:33 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 14:05:54 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr(int n)
 {
-	char	*s;
-
-	s = ft_itoa(n);
-	ft_putstr(s);
+	ft_putnbr_fd(n, 1);
 }
