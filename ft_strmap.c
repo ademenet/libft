@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 10:00:05 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/15 18:07:56 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 15:35:48 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*fresh;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
 	if (!s || !f)
 		return (NULL);

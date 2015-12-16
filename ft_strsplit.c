@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:03:50 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 09:49:00 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 15:27:42 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ char			**ft_strsplit(char const *s, char c)
 	char	**tab;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	nb_ofwords = ft_nbofwords((char *)s, c);
 	tab = (char **)malloc((nb_ofwords + 1) * sizeof(char*));
 	i = 0;

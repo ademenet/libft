@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:34:14 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 19:04:12 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 15:32:46 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	if (s)
+	{
+		ft_putstr(s);
+		ft_putchar('\n');
+	}
 }

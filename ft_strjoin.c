@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 11:33:36 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/15 18:13:41 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 15:15:15 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*strjoin;
 
+	if (!s1)
+		return (NULL);
 	strjoin = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
 	if (!strjoin)
 		return (NULL);
