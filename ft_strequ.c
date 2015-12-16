@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 10:28:37 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/02 09:31:42 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 15:05:04 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
+	if (!s1 || !s2)
+		return (0);
 	while (*s1 && *s2)
 	{
 		if (*s1 != *s2)

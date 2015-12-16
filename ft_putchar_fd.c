@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 13:38:11 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 16:38:52 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/16 14:48:37 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	write(fd, (unsigned char *)(&c), 1);
 }
