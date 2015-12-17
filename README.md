@@ -124,3 +124,22 @@ maillon et celle de tous ses successeurs l’un apres l’autre avec `del` et `f
 
 #### ft_lstmap
 > Parcourt la liste lst en appliquant à chaque maillon la fonction f et cree une nouvelle liste “fraiche” avec `malloc(3)` resultant des applications successives. Si une allocation echoue, la fonction renvoie `NULL`.
+
+## Fonctions bonus perso
+#### ft_isupper
+> Retourne vrai si le caractere `c` passe est en majuscule. Ne fonctionne qu'avec les caracteres ASCII.
+
+#### ft_islower
+> Retourne vrai si le caractere `c` passe est en minuscule. Ne fonctionne qu'avec les caracteres ASCII.
+
+#### ft_strlwr
+> Passe toute la chaine de caractere en minuscule.
+
+#### ft_strupr
+> Passe toute la chaine de caractere en majuscule.
+
+#### ft_strset
+> Initialise toute la chaine de caractere, terminee par un `'\0'`, avec le caractere passe en parametre.
+
+#### ft_strsetnew
+> Cree une nouvelle chaine de caractere initialisee avec le caractere passe en parametre et ajoute un `'\0'` a la fin.
