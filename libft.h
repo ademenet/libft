@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:48:03 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/16 14:49:27 by ademenet         ###   ########.fr       */
+/*   Updated: 2015/12/17 10:53:46 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,10 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void(*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+char				*ft_strsetnew(char c, int size);
+char				*ft_strset(char *s1, int fill);
+char				*ft_strlwr(char *s1);
+char				*ft_strupr(char *s1);
+int					ft_isupper(int c);
+int					ft_islower(int c);
 #endif
