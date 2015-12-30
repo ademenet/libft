@@ -6,7 +6,7 @@
 #    By: ademenet <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2015/12/17 10:46:32 by ademenet         ###   ########.fr        #
+#    Updated: 2015/12/30 10:34:10 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,19 +85,21 @@ HEADERS = libft.h
 
 OBJECT = $(SOURCES:.c=.o)
 
-$(NAME): $(OBJECT)
-	$(CC) $(CC_FLAGS) -c $(SOURCES)
-	ar rc $(NAME) $(OBJECT)
-	ranlib $(NAME)
-	@echo "\033[32mCompilation de la librairie terminee\033[0m"
+$(NAME):
+	@$(CC) $(CC_FLAGS) -c $(SOURCES)
+	@ar rc $(NAME) $(OBJECT)
+	@ranlib $(NAME)
+	@echo "\033[1;33mCompilation \t \033[0;32m[OK]\033[0m"
 
 all: $(NAME)
 
 clean:
-	rm -rf $(OBJECT)
+	@rm -rf $(OBJECT)
+	@echo "\033[1;33mCleaning obj \t \033[0;32m[OK]\033[0m"
 
 fclean: clean
-	rm -fr $(NAME)
+	@rm -fr $(NAME)
+	@echo "\033[1;33mCleaning lib \t \033[0;32m[OK]\033[0m"
 
 re: fclean all
 
