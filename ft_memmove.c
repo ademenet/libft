@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 16:24:07 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/16 18:52:35 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/02/08 10:22:09 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
 #include "libft.h"
-
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

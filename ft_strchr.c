@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 08:59:57 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/01 09:52:57 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/02/02 18:47:34 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strchr(const char *s, int c)
 	while (*s && *s != (char)c)
 		s++;
 	if (*s == (char)c)
+		return ((char *)s);
+	if (!c && *s == '\0')
 		return ((char *)s);
 	return (NULL);
 }

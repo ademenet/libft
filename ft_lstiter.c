@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/03 17:41:18 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/03 18:28:15 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/02/08 10:21:43 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void(*f)(t_list *elem))
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if (lst && f)
 	{
