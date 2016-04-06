@@ -6,7 +6,7 @@
 #    By: ademenet <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2015/12/30 10:34:10 by ademenet         ###   ########.fr        #
+#    Updated: 2016/04/06 13:48:14 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,7 +79,8 @@ SOURCES = ft_atoi.c\
 		  ft_strlwr.c\
 		  ft_strupr.c\
 		  ft_isupper.c\
-		  ft_islower.c
+		  ft_islower.c\
+		  get_next_line.c
 
 HEADERS = libft.h
 

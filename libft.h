@@ -6,14 +6,19 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:48:03 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/17 10:53:46 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/04/06 14:12:27 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 100
 
 # include <string.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {
@@ -86,4 +91,5 @@ char				*ft_strlwr(char *s1);
 char				*ft_strupr(char *s1);
 int					ft_isupper(int c);
 int					ft_islower(int c);
+int					get_next_line(int const fd, char **line);
 #endif
