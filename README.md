@@ -143,3 +143,6 @@ maillon et celle de tous ses successeurs l’un apres l’autre avec `del` et `f
 
 #### ft_strsetnew
 > Cree une nouvelle chaine de caractere initialisee avec le caractere passe en parametre et ajoute un `'\0'` a la fin.
+
+#### get_next_line
+> `int get_next_line(int const fd, char **line)`
