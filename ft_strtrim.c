@@ -6,7 +6,7 @@
 /*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 11:44:03 by ademenet          #+#    #+#             */
-/*   Updated: 2015/12/16 15:27:04 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/04/06 15:12:02 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s)
 			s[start])
 		start++;
 	while ((s[end] == ' ' || s[end] == '\t' || s[end] == '\n') && s[end] &&
-			end > start)
+			end > (int)start)
 		end--;
 	return (ft_strsub(s, start, (end - start + 1)));
 }
