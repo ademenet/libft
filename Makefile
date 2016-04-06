@@ -6,7 +6,7 @@
 #    By: ademenet <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2016/04/06 13:48:14 by ademenet         ###   ########.fr        #
+#    Updated: 2016/04/06 15:10:45 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,7 +87,7 @@ HEADERS = libft.h
 OBJECT = $(SOURCES:.c=.o)
 
 $(NAME):
-	@$(CC) $(CC_FLAGS) -c $(SOURCES)
+	@$(CC) $(FLAGS) -c $(SOURCES)
 	@ar rc $(NAME) $(OBJECT)
 	@ranlib $(NAME)
 	@echo "\033[1;33mCompilation \t \033[0;32m[OK]\033[0m"
