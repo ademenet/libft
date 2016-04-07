@@ -80,7 +80,8 @@ SOURCES = ft_atoi.c\
 		  ft_strupr.c\
 		  ft_isupper.c\
 		  ft_islower.c\
-		  get_next_line.c
+		  get_next_line.c\
+		  ft_count_words.c
 
 HEADERS = libft.h
 

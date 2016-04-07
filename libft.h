@@ -92,4 +92,5 @@ char				*ft_strupr(char *s1);
 int					ft_isupper(int c);
 int					ft_islower(int c);
 int					get_next_line(int const fd, char **line);
+int     			ft_count_words(char *s);
 #endif
