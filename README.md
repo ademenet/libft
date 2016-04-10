@@ -146,3 +146,6 @@ maillon et celle de tous ses successeurs l’un apres l’autre avec `del` et `f
 
 #### get_next_line
 > `int get_next_line(int const fd, char **line)`
+
+#### ft_strtol
+> `long int ft_strtol(char *line)`

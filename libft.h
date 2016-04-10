@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:48:03 by ademenet          #+#    #+#             */
-/*   Updated: 2016/04/06 14:12:27 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/04/10 17:59:48 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,6 @@ int					ft_isupper(int c);
 int					ft_islower(int c);
 int					get_next_line(int const fd, char **line);
 int     			ft_count_words(char *s, char c);
+long int			ft_strtol(char *line);
+
 #endif
