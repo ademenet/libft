@@ -147,5 +147,8 @@ maillon et celle de tous ses successeurs l’un apres l’autre avec `del` et `f
 #### get_next_line
 > `int get_next_line(int const fd, char **line)`
 
+#### ft_count_words
+> `int ft_count_words(char *s, char c)`
+
 #### ft_strtol
 > `long int ft_strtol(char *line)`
