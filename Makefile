@@ -6,7 +6,7 @@
 #    By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2016/04/10 18:00:05 by ademenet         ###   ########.fr        #
+#    Updated: 2016/04/10 19:10:44 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,8 @@ SOURCES = ft_atoi.c\
 		  ft_islower.c\
 		  get_next_line.c\
 		  ft_count_words.c\
-		  ft_strtol.c
+		  ft_strtol.c\
+		  ft_abs.c
 
 HEADERS = libft.h
 
