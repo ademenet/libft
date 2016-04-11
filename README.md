@@ -152,3 +152,6 @@ maillon et celle de tous ses successeurs l’un apres l’autre avec `del` et `f
 
 #### ft_strtol
 > `long int ft_strtol(char *line)`
+
+#### ft_power
+> Utilise la recursivite pour le calcul. `float ft_power(int nb, int exp)`
