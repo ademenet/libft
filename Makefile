@@ -6,7 +6,7 @@
 #    By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2016/04/11 10:39:22 by ademenet         ###   ########.fr        #
+#    Updated: 2016/04/11 14:25:58 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,17 +94,17 @@ $(NAME):
 	@$(CC) $(FLAGS) -c $(SOURCES)
 	@ar rc $(NAME) $(OBJECT)
 	@ranlib $(NAME)
-	@echo "\033[1;33mCompilation Libft \t \033[0;32m[OK]\033[0m"
+	@echo "\033[1;34mLibft\t\033[1;33mCompilation\t\033[0;32m[OK]\033[0m"
 
 all: $(NAME)
 
 clean:
 	@rm -rf $(OBJECT)
-	@echo "\033[1;33mCleaning obj from Libft \t \033[0;32m[OK]\033[0m"
+	@echo "\033[1;34mLibft\t\033[1;33mCleaning obj\t\033[0;32m[OK]\033[0m"
 
 fclean: clean
 	@rm -fr $(NAME)
-	@echo "\033[1;33mCleaning lib \t \033[0;32m[OK]\033[0m"
+	@echo "\033[1;34mLibft\t\033[1;33mCleaning lib\t\033[0;32m[OK]\033[0m"
 
 re: fclean all
 
