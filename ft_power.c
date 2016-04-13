@@ -6,7 +6,7 @@
 /*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/11 09:29:07 by ademenet          #+#    #+#             */
-/*   Updated: 2016/04/11 09:50:45 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/04/13 10:04:52 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ float		ft_power(int nb, int exp)
 		if (exp > 0)
 			return (nb * result * result);
 		else
-			return (result * result)/ nb;
+			return (result * result) / nb;
 	}
 }
