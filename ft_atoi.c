@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademenet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 17:27:36 by ademenet          #+#    #+#             */
-/*   Updated: 2015/11/30 12:08:31 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/04/13 17:56:48 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
-	int	sign;
-	int	nbr;
+	long	sign;
+	long	nbr;
 
 	sign = 1;
 	while (*str == ' ' || *str == '\f' || *str == '\n' || *str == '\r' ||
