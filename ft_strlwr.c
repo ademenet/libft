@@ -24,6 +24,7 @@ char	*ft_strlwr(char *s1)
 	{
 		if (ft_isupper(s1[i]))
 			s1[i] = ft_tolower(s1[i]);
+		i++;
 	}
 	return (s1);
 }
