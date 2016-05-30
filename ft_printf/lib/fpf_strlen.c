@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putwstr.c                                       :+:      :+:    :+:   */
+/*   fpf_strlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/10 17:44:32 by ademenet          #+#    #+#             */
-/*   Updated: 2016/05/12 14:00:31 by ademenet         ###   ########.fr       */
+/*   Created: 2016/04/27 15:15:07 by ademenet          #+#    #+#             */
+/*   Updated: 2016/05/24 10:44:38 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
-
-void		ft_putwstr(wchar_t *ws)
+int		fpf_strlen(char *str)
 {
-	size_t	len;
+	int	i;
 
-	len = ft_wstrlen(ws);
-	while (len > 0)
-	{
-		ft_putwchar(*ws, f);
-		ws++;
-		len--;
-	}
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
