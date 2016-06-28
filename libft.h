@@ -6,7 +6,7 @@
 /*   By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 09:48:03 by ademenet          #+#    #+#             */
-/*   Updated: 2016/04/13 17:59:58 by ademenet         ###   ########.fr       */
+/*   Updated: 2016/06/28 15:56:39 by ademenet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,5 +96,6 @@ int					ft_count_words(char *s, char c);
 long int			ft_strtol(char *line);
 int					ft_abs(int x);
 float				ft_power(int nb, int exp);
+void				ft_lstappend(t_list *list, t_list *new);
 
 #endif

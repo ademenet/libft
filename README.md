@@ -155,3 +155,6 @@ maillon et celle de tous ses successeurs l’un apres l’autre avec `del` et `f
 
 #### ft_power
 > Utilise la recursivite pour le calcul. `float ft_power(int nb, int exp)`
+
+#### ft_lstappend
+> Ajoute un nouvel element `new` en fin de liste `list`. `void ft_lstappend(t_list *list, t_list *new)`

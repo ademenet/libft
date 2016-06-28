@@ -6,7 +6,7 @@
 #    By: ademenet <ademenet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 14:07:17 by ademenet          #+#    #+#              #
-#    Updated: 2016/05/30 17:19:27 by ademenet         ###   ########.fr        #
+#    Updated: 2016/06/28 15:56:55 by ademenet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,7 @@ SOURCES = ft_atoi.c\
 		  ft_strtol.c\
 		  ft_abs.c\
 		  ft_power.c\
-
+		  ft_lstappend.c\
 
 HEADERS = libft.h
 
